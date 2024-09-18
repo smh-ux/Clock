@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3vw;
+    background-color: #eee;
+}
+
+.clock-container {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ddd;
+    animation-name: none;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+}
+
+@keyframes clockMinute {
+    0% {
+        box-shadow: 0px 0px 15px 15px #ddd;
+    } 50% {
+        box-shadow: 0px 0px 0px 0px #ddd;
+    } 100% {
+        box-shadow: 0px 0px 15px 15px #ddd;
+    }
+}
+
+/* .stack {
+    display: flex;
+    margin-bottom: 8%;
+} */
+
+.twelve {
+    position: relative;
+    text-align: center;
+    margin-top: 4%;
+    height: 8%;
+}
+
+.eleven {
+    width: 50%;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.one {
+    width: 50%;
+    text-align: right;
+    margin-right: 25%;
+}
+
+.ten {
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.two {
+    width: 50%;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.nine {
+    width: 50%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.three {
+    width: 50%;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.eight {
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.four {
+    width: 50%;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.seven {
+    width: 50%;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.five {
+    width: 50%;
+    text-align: right;
+    margin-right: 25%;
+}
+
+.six {
+    text-align: center;
+    height: 5%;
+}
+
+.pieces {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.center {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+    margin-left: calc(50% - 1vw);
+    margin-top: calc(50% - 1.5vw);
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 100;
+}
+
+.hour-container {
+    position: absolute; 
+    width: 1vw; 
+    height: 40vw; 
+    left: calc(30% + 19.5vw); 
+    top: calc(4.5vw); 
+    transform: rotate(0deg);
+}
+
+.hour {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 1vw;
+    height: 10vw;
+    margin-top: 10vw;
+    background-color: #000;
+    z-index: 97;
+}
+
+.minute-container {
+    position: absolute; 
+    width: 1vw; 
+    height: 40vw; 
+    left: calc(30% + 19.5vw); 
+    top: calc(4.5vw); 
+    transform: rotate(0deg);
+}
+
+.minute {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 1vw;
+    height: 15vw;
+    margin-top: 5vw;
+    background-color: #000;
+    z-index: 98;
+}
+
+.second-container {
+    position: absolute; 
+    width: 1vw; 
+    height: 40vw; 
+    left: calc(30% + 19.5vw); 
+    top: calc(4.5vw); 
+    transform: rotate(0deg);
+}
+
+.second {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 1vw;
+    height: 15vw;
+    margin-top: 5vw;
+    background-color: #F00;
+    z-index: 99;
+}
+
